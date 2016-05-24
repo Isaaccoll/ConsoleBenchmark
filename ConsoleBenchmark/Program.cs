@@ -25,7 +25,32 @@ namespace ConsoleBenchmark
             addBenchmark.additionBenchmark(2147483647);
             subtract.SubtractionBenchmark(2147483647);
 
-           
+            ExecuteBenchMark();
+
+
+
+        }
+
+
+        public static void ExecuteBenchMark()
+        {
+            const int count = 200000000;
+
+            int[] a = { 1 };
+            double d = 5;
+            int i = 5;
+
+
+            Benchmarks.TimeBenchmark.Timing(count, "array index", () => a[0]);
+            Benchmarks.TimeBenchmark.Timing(count, "double mult", () => d * 6);
+            Benchmarks.TimeBenchmark.Timing(count, "double add ", () => d + 6);
+            Benchmarks.TimeBenchmark.Timing(count, "int    mult", () => i * 6);
+            Benchmarks.TimeBenchmark.Timing(count, "int    add ", () => i + 6);
+            Benchmarks.TimeBenchmark.Timing(count, "int Div", () => i / 6);
+            Benchmarks.TimeBenchmark.Timing(count, "int Sub", () => i - 6);
+            Benchmarks.TimeBenchmark.Timing(count, "double Div", () => d / 6);
+            Benchmarks.TimeBenchmark.Timing(count, "double Sub", () => d - 6);
+
         }
     }
 }
