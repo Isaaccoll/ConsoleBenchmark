@@ -51,6 +51,7 @@
     <Compile Include="Benchmarks\Maths\Addition.cs" />
     <Compile Include="Benchmarks\Maths\StandardDeviation.cs" />
     <Compile Include="Benchmarks\Maths\Subtraction.cs" />
+    <Compile Include="Benchmarks\Storage.cs" />
     <Compile Include="Benchmarks\Time.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
